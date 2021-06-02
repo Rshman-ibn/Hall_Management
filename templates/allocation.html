@@ -1,0 +1,31 @@
+{% extends 'designform.html' %}
+{% block title %}
+{%load bootstrap%}
+{%load static%}
+{% endblock %}
+{% block stylesheet %}
+
+{% endblock %}
+{% block profile %}
+{% endblock %}
+{% block content %}
+<div style="background:blue">
+       <div class="container text-left">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+              {{ form.media }}
+            {{form|bootstrap_horizontal:'col-md-0'}}
+            <br/>
+            </div>
+
+            <button class="btn btn-success">Submit</button>
+
+        </form>
+
+    </div>
+    </div>
+{% endblock %}
+{% block script %}
+
+{% endblock %}

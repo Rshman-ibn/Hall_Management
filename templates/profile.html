@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>allforadmin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+     <link rel="stylesheet" href="{%static 'bootstrap-4.0.0/dist/css/bootstrap.min.css'%}">
+  <script src="{%static 'bootstrap-4.0.0/dist/js/jquery.min.js' %}"></script>
+  <script src="{%static 'bootstrap-4.0.0/dist/js/bootstrap.min.js' %}"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+			 <ul>
+
+
+
+                    {% if request.user.is_authenticated %}
+                         <li><a href="{% url 'profile' %}">profile</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                        <li><a href="{%url 'newallocation'%}">Add new Student</a></li>
+                        <li><a href="#">Create new post</a></li>
+                        <li>
+                          <a href="{%url 'notice'%}">For General Instructions</a>
+                        </li>
+                        {% else %}
+                        <li><a href="{% url 'frmLogin' %}">Login</a></li>
+                    {% endif %}
+
+
+
+                </ul>
+		</div>
+<div class="col-md-6">
+    <div class="row">
+    <div class="col-md-6">
+    <form class="navbar-form navbar-left" action="" method="GET" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" name="q" placeholder="Search">
+  </div>
+  </div>
+  <div class="col-md-2">
+  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+
+   </form>
+
+</div>
+
+{% block content %}
+
+{% endblock %}
+</div>
+</div>
+</div>
+
+</body>
+</html>

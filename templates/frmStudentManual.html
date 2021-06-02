@@ -1,0 +1,24 @@
+{%extends 'Home.html' %}
+{% block content %}
+{% load static %}
+<div style="width: 750px; float: left; vertical-align: top;">
+                    <fieldset style="min-height: 760px;">
+                        
+    <div align="center">
+        <h3>
+            User Operational Manual</h3>
+        <br />
+        <br />
+        <div>
+            <object data="Manual/GeneralInstruction.pdf" type="application/pdf" width="100%" height="670px">
+                <p>
+                    Error: you don't have a PDF plugin for this browser. But..
+                    <br />
+                    you can <a href="{%static 'Manual/GeneralInstruction.pdf' %}">click here to download the PDF file.</a></p>
+            </object>
+        </div>
+    </div>
+
+                    </fieldset>
+                </div>
+            {% endblock %}

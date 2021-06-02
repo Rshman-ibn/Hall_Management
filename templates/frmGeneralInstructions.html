@@ -1,0 +1,43 @@
+{% extends 'designform.html' %}
+{%load bootstrap%}
+{%load static%}
+{% block title %}
+  General Instructions
+{% endblock %}
+{% block stylesheet %}
+
+{% endblock %}
+
+{% block profil %}
+For General Instructions
+{% endblock %}
+{% block content %}
+
+
+    <div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Pdf</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+
+  <tbody>
+   {%for p in files%}
+    <tr>
+      <td>{{p.title}}</td>
+      <td>{{p.category}}</td>
+      <td>{{p.instruction}}</td>
+    <td>  <a href="{{ p.instruction_url|default_if_none:'#' }}" class="btn btn-primary btn-sm" target="_blank"> download Pdf </a></td>
+    </tr>
+  {%endfor%}
+  </tbody>
+</table>
+
+{% endblock %}
+{% block script %}
+
+{% endblock %}

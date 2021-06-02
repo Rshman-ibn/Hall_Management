@@ -1,0 +1,84 @@
+ {%extends 'newallocation.html'%}
+{%load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+ <div class="row content" style="margin-left: 130px;">
+  <div class="col-md-offset-1 col-md-10 tender-single">
+
+ <div class="page-header text-center">
+            <h1>Registration Form</h1>
+        </div>
+<form action=""  method="POST">
+
+    {% csrf_token %}
+
+       <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+
+              <h1> {{form.first_name|as_crispy_field}}</h1>
+        </div>
+           <div class="col-md-6">
+
+              <h1> {{form.last_name|as_crispy_field}}</h1>
+        </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12">
+
+              <h3> {{form.email|as_crispy_field}}</h3>
+        </div>
+        </div>
+        <div class="row">
+           <div class="col-md-12">
+
+              <h3> {{form.username|as_crispy_field}}</h3>
+        </div>
+          </div>
+          <div class="row">
+             <div class="col-md-12">
+
+                <h3> {{form.choice|as_crispy_field}}</h3>
+          </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+
+                  <h3> {{form.depart|as_crispy_field}}</h3>
+            </div>
+              </div>
+              <div class="row">
+                 <div class="col-md-12">
+
+                    <h3> {{form.hall|as_crispy_field}}</h3>
+              </div>
+                </div>
+          <div class="row">
+          <div class="col-md-6">
+
+              <h2> {{form.password1|as_crispy_field}}</h2>
+        </div>
+           <div class="col-md-6">
+
+              <h3> {{form.password2|as_crispy_field}}</h3>
+        </div>
+          </div>
+
+
+            <div class="col-md-10">
+                <span>* All fields are mandatory</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-12">
+                <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                <button type="reset" name="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+
+</form>
+
+</div>
+ </div>
+{% endblock %}

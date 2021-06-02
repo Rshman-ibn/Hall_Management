@@ -1,0 +1,215 @@
+{% extends 'Home.html' %}
+{%block content%}
+{%load static%}
+{%block stylesheet%}{%endblock%}
+
+<div style="width: 750px; float: left; vertical-align: top;">
+                    <fieldset style="min-height: 760px;">
+                        
+    <div>
+        <table width="95%">
+            <tr>
+                <td align="left">
+                    <span id="MainContent_lblWelcome"></span>
+                </td>
+               
+            </tr>
+        </table>
+    </div>
+   
+    <div id="hall_slider">
+        <div class="container-slider"style="height:218px;width:726px fixed;">
+            <div id="slider" class="nivoSlider">
+                        <a href="/home/">
+                        <img id="MainContent_Repeater_ImageUserId_0" title="RUET Main Gate Complex, the beautiful contribution, creation and dream of VC sir of this University."
+						src="{%static 'images/ruetgate.jpeg' %}" 
+                        style="height:218px;width:726px;" />
+						</a>
+                         <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_1" 
+						title="Beauty at Night. Who study here they are really Lucky Guys!"
+						src="{%static 'images/ruetnight.jpg' %}" style="height:218px;width:726px;" /></a>
+                        <a href=""><img id="MainContent_Repeater_ImageUserId_2" 
+						title="This is the Shahid President Ziaur Rahman Hall. It is biggest and more wonderful hall of RUET"
+						src="{%static 'images/ziafinal.png' %}" style="height:218px;width:726px;" />
+                          </a>
+						  <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_3" 
+						title="This is the  Shahid Abdul Hamid Hall.It the most wonderful hall of RUET" 
+						src="{%static 'images/Shahid_Abdul_Hamid_Hallfinal.jpg' %}" 
+                        style="height:218px;width:726px;" />
+                        </a>  <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_4" 
+						title="This is the Tin Shed Hall (Extension).It the most wonderful and oldest hall of RUET" 
+						src="{%static 'images/tinshedfinal.jpg' %}" style="height:205px;width:720px;" />
+                        </a>  <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_5" 
+						title="This is the Shahid Shahidul Islam Hall.It the most wonderful hall of RUET" 
+						src="{%static 'images/shahidulhallfinal.jpg' %}" style="height:218px;width:726px;" />
+                        </a>  <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_6" 
+						title="This is the Shahid Lt. Selim Hall.It the most wonderful and the second biggest hall of RUET" 
+						src="{%static 'images/selimhall.jpg' %}" style="height:218px;width:726px;" />
+                        </a>  <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_7" 
+						title="This is the Bangabandhu Sheikh Mujibur Rahman Hall.It the most wonderful and latest hall of RUET" 
+						src="{%static 'images/bangab.jpg' %}" style="height:218px;width:726px;" />
+                        </a>
+                        <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_8" 
+						title="This is the Deshratna Sheikh Hasina Hall.It the most wonderful and only one ladies hall of RUET" 
+						src="{%static 'images/Sheikhhasinafinal.jpg' %}" style="height:218px;width:726px;" />
+                        </a>
+                        <a href="">
+                        <img id="MainContent_Repeater_ImageUserId_9" 
+						title="This is the Shahid Minar of RUET" 
+						src="{%static 'images/shahidminar.jpg' %}" style="height:218px;width:726px;" />
+                        </a>
+            </div>
+        </div>
+    </div>
+   
+    <div id="Short_Notice">
+        <marquee>
+            <div id="MainContent_divImportantNotice" style="font-family: Verdana; font-size: 16px; text-decoration:none; color: Red; padding-left: 10px;
+                    padding-right: 10px;">
+            </div>
+        </marquee>
+    </div>
+    <fieldset id="MainContent_StudentCount">
+        <legend>Boarder Count Status</legend>
+        <div id="divBoarderSummary" align="center">
+            <table cellspacing="0" id="MainContent_fvStudentCount" style="border-collapse:collapse;">
+	<tr>
+		<td colspan="2">
+                    <table width="600px">
+                        <tr>
+                            <td>
+                                Total Alumni
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblAlumni">686</span>
+                            </td>
+                            <td>
+                                Total Current Student
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalCurStd">1199</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                First Year/ New Attached (FA)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalFA">272</span>
+                            </td>
+                            <td>
+                                Attached (A)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalA">93</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                First Year Messing (FM)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalFM">87</span>
+                            </td>
+                            <td>
+                                Attached Messing (AM)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalAM">130</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Regular (R)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalR">550</span>
+                            </td>
+                            <td>
+                                Outgoing Messing (OM)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalOM">66</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Regular Non-Messing (RN)
+                            </td>
+                            <td>
+                                :
+                            </td>
+                            <td>
+                                <span id="MainContent_fvStudentCount_lblTotalRN">0</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+	</tr>
+</table>
+        </div>
+    </fieldset>
+    <br />
+    <fieldset id="MainContent_fsMealGraph">
+        <legend>Daily Meal Status</legend>
+        <div id="MealGraph" align="center">
+            <div id="MainContent_UpdatePanelMealChart">
+	
+                    <img id="MainContent_ChartMealInfo" BorderDashStyle="Solid" src="{%static 'images/ChartImg728e.png' %}" alt="" style="height:300px;width:680px;border-width:0px;" />
+                    <table width="90%">
+                        <tr>
+                            <td align="left">
+                                <input type="submit" name="ctl00$MainContent$btnPrevious" value="Previous" id="MainContent_btnPrevious" class="btnStyle" />
+                            </td>
+                            <td align="right">
+                                <input type="submit" name="ctl00$MainContent$btnNext" value="Next" id="MainContent_btnNext" class="btnStyle" />
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="ctl00$MainContent$hdnMonthName" id="MainContent_hdnMonthName" value="24/01/2019" />
+                
+</div>
+        </div>
+    </fieldset>
+
+                    </fieldset>
+                </div>
+            
+    {% endblock %}

@@ -1,0 +1,70 @@
+{%extends 'Home.html'%}
+{% block content %}
+{%load static%}
+{%block stylesheet%}{%endblock%}
+<div style="width: 750px; float: left; vertical-align: top;">
+                    <fieldset style="min-height: 760px;">
+                        
+    <div>
+        <div>
+            <h3>
+                {%block title%}Contact with the Developer{%endblock%}
+                
+            </h3>
+            <br />
+        </div>
+        <div align="left">
+            <fieldset>
+                <legend>Copyright</legend>
+                <table width="100%">
+                    <tr>
+                        <td valign="top">
+                            <h4>
+                                Hall Management System of RUET.
+                                <br />
+                                Rajshahi  University of Engineering & Technology (RUET)
+                                <br />
+                                Rajshahi-9203, Bangladesh
+                            </h4>
+                        </td>
+                        <td align="right">
+                            <img id="MainContent_logo" src="{%static 'images/logoo.png' %}" style="width:70px;" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Lead Developer, Analyst, Database Designer and Software Engineer</legend>
+                <table width="100%">
+                    <tr>
+                        <td valign="top">
+                            <h4>
+                                Md.Rana Sarkar (B.Sc. Eng. runnning )
+                                <br />
+                                Student of CSE 
+                                <br />
+                              
+                                Rajshahi University of Engineering & Technology (RUET)
+                                <br />
+                                <br />
+                                Email:ranaruet344@gmail.com@gmail.com
+                                <br />
+                                Mobile: +880 1704246120 [Call me at 8pm to 9pm]
+                                <br />
+                                Website: <a href="https://ranasarkar344.blogspot.com/">My Blog</a>
+                            </h4>
+                        </td>
+                        <td align="right">
+                            <img id="MainContent_developer" src="{%static 'images/Picture 010-Pp.jpg' %}" style="width:150px;" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+           
+        </div>
+    </div>
+
+                    </fieldset>
+                </div>
+{% endblock %}

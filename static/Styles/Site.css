@@ -1,0 +1,162 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    background: #bbdbf3;
+    font-size: .80em;
+    font-family: Verdana;
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+.menualign
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #000;
+    /*font-variant: small-caps;
+    text-transform: none;*/
+    font-weight: 200;
+    margin-bottom: 0px;
+    font-family: Verdana;
+}
+
+h1
+{
+    font-size: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1.7em;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h3
+{
+    font-size: 1.3em;
+    /*font-family: Verdana;*/
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: #00A2E5;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 1000px;
+    background-color: #fff;
+    margin: 10px 0px 10px 0px; /*top right bottom left*/
+    border: 1px solid #00A2E5;
+    min-height: 800px;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.footer
+{
+    color: #4e5766;
+    background-color: #B5C7DE;
+    /*padding: 8px 5px 0px 5px;
+    margin: 5px;*/
+    text-align: center;
+    line-height: normal;
+    /*border-top: 2px solid #00A2E5;*/
+    height: 50px;
+    padding-top: 10px;
+}
+
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 3px;
+    padding: 5px;
+    border: 1px solid #00A2E5;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+
+/* My Custom Style
+--------------------------------------------------------------*/
+
+.boxshadow
+{
+    box-shadow: 0px 0px 17px 4px rgba(4, 146, 254, 0.75);
+    -moz-box-shadow: 0px 0px 17px 4px rgba(4, 146, 254, 0.75);
+    -webkit-box-shadow: 0px 0px 17px 4px rgba(4, 146, 254, 0.75);
+}

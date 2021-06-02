@@ -1,0 +1,44 @@
+{%extends 'profile.html'%}
+{%load static %}
+{% load crispy_forms_tags %}
+<div class="row content" style="margin-left: 130px;">
+ <div class="col-md-offset-1 col-md-10 tender-single">
+{%block content%}
+<div class="container">
+<h2>Uploaded Notice</h2>
+<form  method="post" enctype="multipart/form-data">
+  <div class="col-md-12">
+
+
+  {%csrf_token%}
+  <div class="row">
+     <div class="col-md-6">
+       <h1> {{form.author_main|as_crispy_field}}</h1>
+   </div>
+   </div>
+   <div class="row">
+      <div class="col-md-6">
+
+         <h1> {{form.title|as_crispy_field}}</h1>
+   </div>
+   </div>
+
+     <div class="row">
+     <div class="col-md-6">
+
+         <h3> {{form.instruction|as_crispy_field}}</h3>
+   </div>
+   </div>
+   <div class="row">
+      <div class="col-md-6">
+        <h3> {{form.category|as_crispy_field}}</h3>
+   </div>
+     </div>
+
+  <input type="submit" class="btn btn-primary" name="Upload" value="Upload">
+  </div>
+</form>
+</div>
+</div>
+</div>
+{%endblock%}
